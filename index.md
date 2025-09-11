@@ -32,7 +32,7 @@ Our mission is to push the boundaries of what's possible with generative AI whil
 ## Our Projects
 
 ### [🚀 Kontext Style](https://huggingface.co/Kontext-Style) - High-quality LoRA adapters for FLUX.1 Kontext. Unleash your creativity with seamless artistic style transfer and exceptional image generation.
-### [🚀 LucidFlux](https://github.com/W2GenAI-Lab/W2GenAI-Lab.github.io/tree/main/LucidFlux/index.html) - Universal Image Restoration with a Large-Scale Diffusion Transformer
+### [🚀 LucidFlux](https://w2genai-lab.github.io/LucidFlux) - Universal Image Restoration with a Large-Scale Diffusion Transformer
 
 ## Contact Us
 
