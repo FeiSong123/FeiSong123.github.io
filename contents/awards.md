@@ -1,0 +1,7 @@
+- Runner-up, 2021 Liaoning Provincial Robot Competition (Garbage Sorting)
+- First Runner-up, 2022 ABU Robocon China
+- Third Prize, 2022 ABU Robocon China (Robot Horsemanship)
+- Runner-up, 2022 Liaoning Provincial Robot Competition (Garbage Sorting)
+- Second Prize, 2023 ABU Robocon China (Robot Horsemanship)
+- Second Prize, 2023 ABU Robocon China
+- Second Prize, 2023 National Undergraduate Electronic Design Contest of China (Project E)

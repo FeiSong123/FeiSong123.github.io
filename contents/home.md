@@ -1,13 +1,13 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=120&section=header&text=Song%20Fei&fontSize=30&fontColor=gradient&animation=fadeIn&fontAlignY=35" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=120&section=header&text=Sixiang%20Chen&fontSize=30&fontColor=gradient&animation=fadeIn&fontAlignY=35" />
 </div>
 
-<!-- <div align="center">
+<div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Caveat&pause=1000&color=8B5CF6&center=true&vCenter=true&width=450&lines=Losing+Ground+Now%2C+Gaining+Miles+Tomorrow%21&size=28" alt="Typing SVG" />
-</div> -->
+</div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=FeiSong123&label=Profile%20views&color=8B5CF6&style=flat" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Ephemeral182&label=Profile%20views&color=8B5CF6&style=flat" alt="Profile Views" />
 
 </div>
 
