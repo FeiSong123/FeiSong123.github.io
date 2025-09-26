@@ -8,7 +8,7 @@ My name is Song Fei (费崧). I received my bachelor degree in Industrial Intell
 #### Education  
 **Northeastern University**, Bachelor of Engineering (2020 – 2024)  
 
-**HKUSTGZ**, Mphil student, (2024 – present)
+**HKUSTGZ**, Mphil student, (2024 – Present)
 
 #### Research Interests  
 - AIGC
