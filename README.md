@@ -26,11 +26,12 @@
 
 ## 📊 Latest News & GitHub Stats
 
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=Ephemeral182&show_icons=true&theme=radical&hide_border=true&card_width=400&card_height=280&bg_color=1a1b27&title_color=8B5CF6&text_color=a9b1d6&icon_color=bb9af7" alt="GitHub Stats" />
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=FeiSong123&show_icons=true&theme=radical&hide_border=true&card_width=400&card_height=280&bg_color=1a1b27&title_color=8B5CF6&text_color=a9b1d6&icon_color=bb9af7" alt="GitHub Stats" />
 
 ### 🌟 Latest News
 - **🚀 Sep 2025**: Released LucidFlux framework.
 
+---
 
 ## 📫 Let's Connect!
 
