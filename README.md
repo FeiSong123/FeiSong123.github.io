@@ -31,6 +31,8 @@
 ### 🌟 Latest News
 - **🚀 Sep 2025**: Released LucidFlux framework.
 
+<br clear="right">
+
 ---
 
 ## 📫 Let's Connect!
