@@ -213,33 +213,33 @@ section .main-body{
     gap: 0.9rem;
 }
 
-.pub-summary {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 0.9rem;
+.intro-counters {
+    display: flex;
+    flex: 1 1 260px;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.pub-summary-card {
-    background: rgba(255, 255, 255, 0.86);
-    border: 1px solid rgba(100, 110, 220, 0.2);
-    border-radius: 14px;
-    padding: 0.8rem 0.9rem;
+.counter-card {
+    flex: 1;
+    background: white;
+    border-radius: 22px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
     text-align: center;
-    box-shadow: 0 8px 22px rgba(72, 84, 160, 0.12);
+    padding: 1.2rem;
+    box-shadow: 0 10px 26px rgba(73, 81, 150, 0.12);
 }
 
-.pub-summary-value {
-    font-size: 1.45rem;
-    font-weight: 800;
-    color: #3344c0;
-    line-height: 1.1;
+.counter-value {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #0f62fe;
 }
 
-.pub-summary-label {
-    margin-top: 0.2rem;
-    font-size: 0.8rem;
-    color: #5f6288;
+.counter-label {
+    font-size: 0.9rem;
+    color: #475569;
+    margin-top: 0.4rem;
 }
 
 .paper-row {
@@ -395,6 +395,10 @@ section .main-body{
 }
 
 @media screen and (max-width: 768px) {
+    .intro-counters {
+        flex-direction: column;
+    }
+
     .paper-row {
         grid-template-columns: 1fr;
     }
