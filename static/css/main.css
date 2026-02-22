@@ -228,6 +228,27 @@ section .main-body{
     text-align: center;
     padding: 1.2rem;
     box-shadow: 0 10px 26px rgba(73, 81, 150, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.counter-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #0f62fe, #5b8cff, #8b5cf6);
+}
+
+.counter-kicker {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #63739d;
+    margin-bottom: 0.2rem;
+    font-weight: 700;
 }
 
 .counter-value {
@@ -240,6 +261,33 @@ section .main-body{
     font-size: 0.9rem;
     color: #475569;
     margin-top: 0.4rem;
+}
+
+.counter-note {
+    margin-top: 0.35rem;
+    font-size: 0.78rem;
+    color: #7081a8;
+}
+
+.panel-title-blue {
+    margin: 0 0 0.8rem;
+    color: #2f44cb;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+body.publications-view #home,
+body.publications-view #news,
+body.publications-view #awards,
+body.publications-view .top-section,
+body.publications-view .profile-photo-container {
+    display: none;
+}
+
+body.publications-view #publications {
+    display: block;
+    margin-top: 4.5rem;
 }
 
 .paper-row {

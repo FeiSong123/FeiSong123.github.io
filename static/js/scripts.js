@@ -39,24 +39,21 @@ function setupResponsiveNavbar() {
     });
 }
 
-function setupPublicationsReveal() {
+function setupPublicationsView() {
     const publicationsSection = document.getElementById('publications');
     if (!publicationsSection) {
         return;
     }
 
-    const revealPublications = () => {
+    const params = new URLSearchParams(window.location.search);
+    const isPublicationsView = params.get('view') === 'publications';
+
+    if (isPublicationsView || window.location.hash === '#publications') {
         publicationsSection.classList.remove('publications-hidden');
-    };
+    }
 
-    document.querySelectorAll('.js-publications-link').forEach(link => {
-        link.addEventListener('click', () => {
-            revealPublications();
-        });
-    });
-
-    if (window.location.hash === '#publications') {
-        revealPublications();
+    if (isPublicationsView) {
+        document.body.classList.add('publications-view');
     }
 }
 
@@ -87,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setActiveNav();
     setupResponsiveNavbar();
-    setupPublicationsReveal();
+    setupPublicationsView();
 
     fetch(`${contentDir}${configFile}`)
         .then(response => response.text())
