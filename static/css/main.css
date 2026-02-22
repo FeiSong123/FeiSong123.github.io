@@ -278,6 +278,17 @@ section .main-body{
     gap: 0.45rem;
 }
 
+.repo-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.45rem;
+}
+
+.repo-stats img {
+    height: 20px;
+}
+
 .paper-action {
     text-decoration: none;
     display: inline-flex;
@@ -291,6 +302,38 @@ section .main-body{
     background: #fff;
 }
 
+.scrollable-news {
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 0.4rem;
+}
+
+.scrollable-news ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.scrollable-news li {
+    margin-bottom: 0.72rem;
+}
+
+.footer-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-left: 0.4rem;
+}
+
+.footer-icon-link {
+    color: rgba(255, 255, 255, 0.86);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-icon-link:hover {
+    color: #fff;
+}
+
 @media screen and (max-width: 768px) {
     .paper-row {
         grid-template-columns: 1fr;
@@ -301,4 +344,3 @@ section .main-body{
         max-height: 200px;
     }
 }
-

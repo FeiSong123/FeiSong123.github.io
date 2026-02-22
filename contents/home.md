@@ -1,19 +1,10 @@
-[![FeiSong123](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/FeiSong123)
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=3Kj6HaoAAAAJ)
-
 My name is Song Fei (费崧). I received my bachelor degree in Industrial Intelligence from the College of Information Science and Engineering at Northeastern University. My research interests lie in the AIGC and low-level vision. I am currently a second-year Mphil student at HKUSTGZ@ROAS, supervised by Prof. Lei Zhu.
 
 #### Links  
-- GitHub: [https://github.com/FeiSong123](https://github.com/FeiSong123)  
-- Google Scholar: [https://scholar.google.com/citations?user=3Kj6HaoAAAAJ](https://scholar.google.com/citations?user=3Kj6HaoAAAAJ)
+- Please use the footer icons for GitHub and Google Scholar.
 
 #### Email  
 <code>sfei285@connect.hkust-gz.edu.cn</code>  
-
-#### Education  
-**Northeastern University**, Bachelor of Engineering (2020 – 2024)  
-
-**HKUSTGZ**, Mphil student, (2024 – Present)
 
 #### Research Interests  
 - AIGC
