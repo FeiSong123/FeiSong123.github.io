@@ -283,6 +283,7 @@ section .main-body{
 body.publications-view #home,
 body.publications-view #news,
 body.publications-view #awards,
+body.publications-view #education-experience,
 body.publications-view .top-section,
 body.publications-view .profile-photo-container {
     display: none;
@@ -304,6 +305,28 @@ body.publications-view #publications {
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 10px 26px rgba(73, 81, 150, 0.12);
+}
+
+.experience-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 1rem 1.1rem;
+    box-shadow: 0 10px 26px rgba(73, 81, 150, 0.12);
+}
+
+.experience-list {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.experience-list li {
+    margin-bottom: 0.5rem;
+    color: #33415f;
+}
+
+.experience-list li:last-child {
+    margin-bottom: 0;
 }
 
 .paper-thumb img {
