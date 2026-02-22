@@ -453,6 +453,6 @@ body.publications-view #publications {
 
     .paper-thumb img {
         min-height: 160px;
-        max-height: 200px;
+        max-height: 240px;
     }
 }
