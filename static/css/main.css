@@ -7,6 +7,8 @@
     --hero-accent-2: #45d7ff;
     --glass-bg: rgba(255, 255, 255, 0.68);
     --card-border: rgba(104, 99, 255, 0.2);
+    /* Publications 图片宽度：可选 220px / 240px / 260px / 280px */
+    --paper-thumb-width: 260px;
 }
 
 .header {
@@ -270,6 +272,7 @@ section .main-body{
 }
 
 .panel-title-blue {
+    /* 全站板块标题统一样式（News / Awards / Publications） */
     margin: 0 0 0.8rem;
     color: #2f44cb;
     font-size: 1.9rem;
@@ -287,12 +290,14 @@ body.publications-view .profile-photo-container {
 
 body.publications-view #publications {
     display: block;
+    /* Publications-only 视图时，与固定导航的顶部留白 */
     margin-top: 4.5rem;
 }
 
 .paper-row {
     display: grid;
-    grid-template-columns: 240px 1fr;
+    /* 左侧论文图宽度由变量控制 */
+    grid-template-columns: var(--paper-thumb-width) 1fr;
     gap: 1rem;
     background: #fff;
     border: 1px solid var(--card-border);
@@ -453,6 +458,6 @@ body.publications-view #publications {
 
     .paper-thumb img {
         min-height: 160px;
-        max-height: 240px;
+        max-height: 200px;
     }
 }
