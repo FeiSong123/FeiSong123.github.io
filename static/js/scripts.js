@@ -2,8 +2,7 @@ const contentDir = 'contents/';
 const configFile = 'config.yml';
 
 const markdownTargets = {
-    home: 'home-md',
-    awards: 'awards-md'
+    home: 'home-md'
 };
 
 function getCurrentPage() {
@@ -40,6 +39,27 @@ function setupResponsiveNavbar() {
     });
 }
 
+function setupPublicationsReveal() {
+    const publicationsSection = document.getElementById('publications');
+    if (!publicationsSection) {
+        return;
+    }
+
+    const revealPublications = () => {
+        publicationsSection.classList.remove('publications-hidden');
+    };
+
+    document.querySelectorAll('.js-publications-link').forEach(link => {
+        link.addEventListener('click', () => {
+            revealPublications();
+        });
+    });
+
+    if (window.location.hash === '#publications') {
+        revealPublications();
+    }
+}
+
 function renderConfig(config) {
     Object.keys(config).forEach(key => {
         const target = document.getElementById(key);
@@ -67,6 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setActiveNav();
     setupResponsiveNavbar();
+    setupPublicationsReveal();
 
     fetch(`${contentDir}${configFile}`)
         .then(response => response.text())

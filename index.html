@@ -38,10 +38,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#home">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#news">NEWS</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#home">ABOUT ME</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#awards">AWARDS</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" data-nav href="publications.html">PUBLICATIONS</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 js-publications-link" href="#publications">PUBLICATIONS</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle me-lg-3" href="#" id="paperWebDropdownIndex" role="button" data-bs-toggle="dropdown" aria-expanded="false">PAPER WEB</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="paperWebDropdownIndex">
@@ -80,7 +79,14 @@
             <header>
                 <h2 id="home-subtitle"></h2>
             </header>
-            <main class="main-content" id="home-md" data-md-section="home"></main>
+            <main class="main-content">
+                <p class="about-links-inline">
+                    <a href="mailto:sfei285@connect.hkust-gz.edu.cn" target="_blank"><i class="bi bi-envelope-fill"></i> Email</a>
+                    <a href="https://github.com/FeiSong123" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+                    <a href="https://scholar.google.com/citations?user=3Kj6HaoAAAAJ" target="_blank"><i class="bi bi-mortarboard-fill"></i> Google Scholar</a>
+                </p>
+                <div id="home-md" data-md-section="home"></div>
+            </main>
         </div>
     </section>
 
@@ -94,14 +100,12 @@
                     <h2 class="news-title">📰 News and Updates</h2>
                     <div class="scrollable-news">
                         <ul>
-                            <li><strong>Sep. 2025：</strong>📄 <a href="https://w2genai-lab.github.io/UltraFlux/" target="_blank"><strong>UltraFlux</strong></a> is online (target venue: <strong>CVPR 2026</strong>).</li>
-                            <li><strong>Sep. 2025：</strong>📄 <a href="https://w2genai-lab.github.io/LucidFlux/" target="_blank"><strong>LucidFlux</strong></a> is online (target venue: <strong>ICLR 2026</strong>).</li>
-                            <li><strong>Jun. 2025：</strong>📄 <a href="https://ephemeral182.github.io/PosterCraft/" target="_blank"><strong>PosterCraft</strong></a> project page is released.</li>
-                            <li><strong>Jun. 2025：</strong>🌫️ <a href="https://github.com/Ephemeral182" target="_blank"><strong>GenHaze</strong></a> project is released.</li>
-                            <li><strong>Mar. 2025：</strong>❄️ <a href="https://github.com/alexlai2860/SnowMaster" target="_blank"><strong>SnowMaster</strong></a> project is released.</li>
-                            <li><strong>Aug. 2024：</strong>🎓 Started MPhil study at <strong>HKUST (Guangzhou)</strong>.</li>
-                            <li><strong>2023：</strong>🏆 Received <strong>Outstanding Graduate</strong> honor.</li>
-                            <li><strong>2021–2023：</strong>🏅 Won multiple prizes in ABU Robocon and provincial robotics competitions.</li>
+                            <li><strong>Feb. 2026: </strong> <a href="https://w2genai-lab.github.io/UltraFlux/" target="_blank"><strong>UltraFlux</strong></a> was accepted by CVPR 2026.</li>
+                            <li><strong>Jan. 2026: </strong> <a href="https://w2genai-lab.github.io/LucidFlux/" target="_blank"><strong>LucidFlux</strong></a> & <a href="https://ephemeral182.github.io/PosterCraft/" target="_blank"><strong>PosterCraft</strong></a> were accepted by ICLR 2026.</li>
+                            <li><strong>Jun. 2025: </strong> <a href="https://github.com/Ephemeral182" target="_blank"><strong>GenHaze</strong></a> was accepted by ICCV 2025.</li>
+                            <li><strong>Mar. 2025: </strong> <a href="https://github.com/alexlai2860/SnowMaster" target="_blank"><strong>SnowMaster</strong></a> was accepted by CVPR 2025.</li>
+                            <li><strong>Aug. 2024: </strong> Started MPhil study at <strong>HKUST (Guangzhou)</strong>.</li>
+                            <li><strong>2021-2023: </strong> Won multiple prizes in ABU Robocon and provincial robotics competitions.</li>
                         </ul>
                     </div>
                 </div>
@@ -121,9 +125,9 @@
                         <h2 class="service-title">Academic Service &amp; Awards</h2>
                     </div>
                     <div class="service-card">
-                        <p><strong>Program Committee / Reviewer:</strong></p>
+                        <p><strong>Reviewer:</strong></p>
                         <div class="service-list">
-                            <p>Conference on Computer Vision and Pattern Recognition (<strong>CVPR'2026</strong>)</p>
+                            <!-- <p>Conference on Computer Vision and Pattern Recognition (<strong>CVPR'2026</strong>)</p>
                             <p>International Conference on Learning Representations (<strong>ICLR'2026</strong>)</p>
                             <p>IEEE Transactions on Pattern Analysis and Machine Intelligence (<strong>TPAMI</strong>)</p>
                             <p>International Conference on Computer Vision (<strong>ICCV'2025</strong>)</p>
@@ -133,7 +137,8 @@
                             <p>Conference on Computer Vision and Pattern Recognition (<strong>CVPR'2025</strong>)</p>
                             <p>International Conference on Learning Representations (<strong>ICLR'2025</strong>)</p>
                             <p>IEEE Transactions on Intelligent Transportation Systems (<strong>TITS</strong>)</p>
-                            <p>IEEE Transactions on Multimedia (<strong>TMM</strong>)</p>
+                            <p>IEEE Transactions on Multimedia (<strong>TMM</strong>)</p> -->
+                            <p>AAAI Conference on Artificial Intelligence (<strong>AAAI'2026</strong>)</p>
                         </div>
                         <br />
                         <p><strong>Awards:</strong></p>
@@ -163,45 +168,157 @@
         </div>
     </section>
 
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="explore">
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5 publications-hidden" id="publications">
         <div class="container px-5">
             <header>
-                <h2><i class="bi bi-grid-1x2-fill"></i> Explore</h2>
+                <h2><i class="bi bi-file-earmark-text-fill"></i> Publications</h2>
             </header>
-            <div class="quick-nav-grid">
-                <a class="quick-nav-card" href="publications.html">
-                    <i class="bi bi-file-earmark-text-fill"></i>
-                    <h3>Publications</h3>
-                    <p>Browse papers with image, links, venue, and year.</p>
-                </a>
-                <a class="quick-nav-card" href="#awards">
-                    <i class="bi bi-trophy-fill"></i>
-                    <h3>Awards</h3>
-                    <p>See competitions, rankings, and achievements.</p>
-                </a>
-            </div>
-        </div>
-    </section>
+            <main id="publications-list" class="main-content publication-list" data-source="manual">
+                <article class="paper-row">
+                    <a class="paper-thumb image-wrapper" href="https://w2genai-lab.github.io/UltraFlux/" target="_blank" rel="noopener noreferrer" data-description="CVPR 2026">
+                        <img src="static/assets/gallery/ultraflux.jpg" alt="UltraFlux">
+                    </a>
+                    <div class="paper-content">
+                        <h3 class="paper-title"><a href="https://w2genai-lab.github.io/UltraFlux/" target="_blank" rel="noopener noreferrer">UltraFlux: Data-Model Co-Design for High-quality Native 4K Text-to-Image Generation across Diverse Aspect Ratios</a></h3>
+                        <p class="paper-authors">Tian Ye<sup>*‡</sup>, <strong><u>Song Fei</u></strong><sup>*</sup>, Lei Zhu<sup>✉️</sup></p>
+                        <p class="paper-author-notes"><sup>*</sup> Equal Contribution · <sup>‡</sup> Project Leader · <sup>✉️</sup> Corresponding Author</p>
+                        <div class="paper-meta">
+                            <span class="paper-tag"><i class="bi bi-patch-check"></i>CVPR 2026</span>
+                        </div>
+                        <div class="paper-actions">
+                            <a class="paper-action" href="http://arxiv.org/abs/2509.22414" target="_blank" rel="noopener noreferrer">📖 Paper</a>
+                            <a class="paper-action" href="https://w2genai-lab.github.io/UltraFlux/" target="_blank" rel="noopener noreferrer">🌐 Website</a>
+                            <a class="paper-action" href="https://github.com/W2GenAI-Lab/UltraFlux" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>GitHub</a>
+                            <a class="paper-action" href="https://huggingface.co/Owen777/UltraFlux-v1" target="_blank" rel="noopener noreferrer">🤗 HuggingFace</a>
+                        </div>
+                        <div class="repo-stats">
+                            <a href="https://github.com/W2GenAI-Lab/UltraFlux/stargazers" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/W2GenAI-Lab/UltraFlux?style=flat-square&logo=github" alt="UltraFlux stars"></a>
+                            <a href="https://github.com/W2GenAI-Lab/UltraFlux/network/members" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/forks/W2GenAI-Lab/UltraFlux?style=flat-square&logo=github" alt="UltraFlux forks"></a>
+                        </div>
+                    </div>
+                </article>
 
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="education-experience">
-        <div class="container px-5">
-            <header>
-                <h2><i class="bi bi-mortarboard-fill"></i> Educations &amp; Experience</h2>
-            </header>
-            <main class="main-content">
-                <div class="experience-section fade-in">
-                    <div class="experience-header">
-                        <i class="bi bi-book-half service-leading-icon"></i>
-                        <h2 class="experience-title">Educations &amp; Experience</h2>
+                <article class="paper-row">
+                    <a class="paper-thumb image-wrapper" href="https://w2genai-lab.github.io/LucidFlux/" target="_blank" rel="noopener noreferrer" data-description="ICLR 2026">
+                        <img src="static/assets/gallery/lucidflux.png" alt="LucidFlux">
+                    </a>
+                    <div class="paper-content">
+                        <h3 class="paper-title"><a href="https://w2genai-lab.github.io/LucidFlux/" target="_blank" rel="noopener noreferrer">LucidFlux: Caption-Free Photo-Realistic Image Restoration with a Large-Scale Diffusion Transformer</a></h3>
+                        <p class="paper-authors"><strong><u>Song Fei</u></strong><sup>*</sup>, Tian Ye<sup>*‡</sup>, Lujia Wang, Lei Zhu<sup>✉️</sup></p>
+                        <p class="paper-author-notes"><sup>*</sup> Equal Contribution · <sup>‡</sup> Project Leader · <sup>✉️</sup> Corresponding Author</p>
+                        <div class="paper-meta">
+                            <span class="paper-tag"><i class="bi bi-patch-check"></i>ICLR 2026</span>
+                        </div>
+                        <div class="paper-actions">
+                            <a class="paper-action" href="http://arxiv.org/abs/2509.22414" target="_blank" rel="noopener noreferrer">📖 Paper</a>
+                            <a class="paper-action" href="https://w2genai-lab.github.io/LucidFlux/" target="_blank" rel="noopener noreferrer">🌐 Website</a>
+                            <a class="paper-action" href="https://github.com/W2GenAI-Lab/LucidFlux" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>GitHub</a>
+                            <a class="paper-action" href="https://huggingface.co/W2GenAI/LucidFlux" target="_blank" rel="noopener noreferrer">🤗 HuggingFace</a>
+                        </div>
+                        <div class="repo-stats">
+                            <a href="https://github.com/W2GenAI-Lab/LucidFlux/stargazers" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/W2GenAI-Lab/LucidFlux?style=flat-square&logo=github" alt="LucidFlux stars"></a>
+                            <a href="https://github.com/W2GenAI-Lab/LucidFlux/network/members" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/forks/W2GenAI-Lab/LucidFlux?style=flat-square&logo=github" alt="LucidFlux forks"></a>
+                        </div>
                     </div>
-                    <div class="experience-card">
-                        <ul class="experience-list">
-                            <li><strong>Sept. 2024 – Present:</strong> MPhil Student, The Hong Kong University of Science and Technology (Guangzhou)</li>
-                            <li><strong>Aug. 2023 – Aug. 2024:</strong> Research Assistant, The Hong Kong University of Science and Technology (Guangzhou)</li>
-                            <li><strong>Sept. 2020 – Jun. 2024:</strong> B.Eng., Northeastern University</li>
-                        </ul>
+                </article>
+
+                <article class="paper-row">
+                    <a class="paper-thumb image-wrapper" href="https://ephemeral182.github.io/PosterCraft/" target="_blank" rel="noopener noreferrer" data-description="2025">
+                        <img src="static/assets/gallery/postercraft.png" alt="PosterCraft">
+                    </a>
+                    <div class="paper-content">
+                        <h3 class="paper-title"><a href="https://arxiv.org/abs/2506.10741" target="_blank" rel="noopener noreferrer">PosterCraft: Rethinking High-Quality Aesthetic Poster Generation in a Unified Framework</a></h3>
+                        <p class="paper-authors"><strong><u>Song Fei</u></strong>, Tian Ye, Lei Zhu<sup>✉️</sup></p>
+                        <div class="paper-meta">
+                            <span class="paper-tag"><i class="bi bi-calendar-event"></i>2025</span>
+                            <span class="paper-tag"><i class="bi bi-patch-check"></i>arXiv</span>
+                        </div>
+                        <div class="paper-actions">
+                            <a class="paper-action" href="https://arxiv.org/abs/2506.10741" target="_blank" rel="noopener noreferrer">📖 Paper</a>
+                            <a class="paper-action" href="https://ephemeral182.github.io/PosterCraft/" target="_blank" rel="noopener noreferrer">🌐 Website</a>
+                            <a class="paper-action" href="https://github.com/Ephemeral182/PosterCraft" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>GitHub</a>
+                        </div>
+                        <div class="repo-stats">
+                            <a href="https://github.com/Ephemeral182/PosterCraft/stargazers" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/Ephemeral182/PosterCraft?style=flat-square&logo=github" alt="PosterCraft stars"></a>
+                            <a href="https://github.com/Ephemeral182/PosterCraft/network/members" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/forks/Ephemeral182/PosterCraft?style=flat-square&logo=github" alt="PosterCraft forks"></a>
+                        </div>
                     </div>
-                </div>
+                </article>
+
+                <article class="paper-row">
+                    <a class="paper-thumb image-wrapper" href="https://w2genai-lab.github.io/Nano-Banana-Figure" target="_blank" rel="noopener noreferrer" data-description="Project">
+                        <img src="static/assets/gallery/nanobanana-figure.png" alt="Nano-Banana-Figure">
+                    </a>
+                    <div class="paper-content">
+                        <h3 class="paper-title"><a href="https://w2genai-lab.github.io/Nano-Banana-Figure" target="_blank" rel="noopener noreferrer">Nano-Banana-Figure: LoRA Adapter for Figure-style Image Editing</a></h3>
+                        <p class="paper-authors"><strong><u>Song Fei</u></strong>, Tian Ye</p>
+                        <div class="paper-meta">
+                            <span class="paper-tag"><i class="bi bi-calendar-event"></i>2025</span>
+                            <span class="paper-tag"><i class="bi bi-patch-check"></i>Project</span>
+                        </div>
+                        <div class="paper-actions">
+                            <a class="paper-action" href="https://w2genai-lab.github.io/Nano-Banana-Figure" target="_blank" rel="noopener noreferrer">🌐 Project</a>
+                            <a class="paper-action" href="https://github.com/W2GenAI-Lab/Nano-Banana-Figure" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>GitHub</a>
+                            <a class="paper-action" href="https://huggingface.co/W2GenAI/Nano-Banana-Figure-LoRA" target="_blank" rel="noopener noreferrer">🤗 HuggingFace</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper-row">
+                    <a class="paper-thumb image-wrapper" href="https://w2genai-lab.github.io/Kontext-Style/" target="_blank" rel="noopener noreferrer" data-description="Project">
+                        <img src="static/assets/gallery/kontext-style.jpg" alt="Kontext-Style">
+                    </a>
+                    <div class="paper-content">
+                        <h3 class="paper-title"><a href="https://w2genai-lab.github.io/Kontext-Style/" target="_blank" rel="noopener noreferrer">Kontext-Style: Open Community for Artistic Style Transfer and LoRA Adapters</a></h3>
+                        <p class="paper-authors">Tian Ye, <strong><u>Song Fei</u></strong></p>
+                        <div class="paper-meta">
+                            <span class="paper-tag"><i class="bi bi-calendar-event"></i>2025</span>
+                            <span class="paper-tag"><i class="bi bi-patch-check"></i>Project</span>
+                        </div>
+                        <div class="paper-actions">
+                            <a class="paper-action" href="https://w2genai-lab.github.io/Kontext-Style/" target="_blank" rel="noopener noreferrer">🌐 Project</a>
+                            <a class="paper-action" href="https://github.com/W2GenAI-Lab/Kontext-Style" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>GitHub</a>
+                            <a class="paper-action" href="https://huggingface.co/Kontext-Style" target="_blank" rel="noopener noreferrer">🤗 HuggingFace</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper-row">
+                    <a class="paper-thumb image-wrapper" href="https://github.com/Ephemeral182" target="_blank" rel="noopener noreferrer" data-description="Project">
+                        <img src="static/assets/gallery/genhaze.png" alt="GenHaze">
+                    </a>
+                    <div class="paper-content">
+                        <h3 class="paper-title"><a href="https://github.com/Ephemeral182" target="_blank" rel="noopener noreferrer">GenHaze: Pioneering Controllable One-Step Realistic Haze Generation for Real-World Dehazing</a></h3>
+                        <p class="paper-authors">Sixiang Chen, Tian Ye, Yunlong Lin, Yeying Jin, Yijun Yang, Haoyu Chen, Jianyu Lai, <strong><u>Song Fei</u></strong>, Zhaohu Xing, Fugee Tsung, Lei Zhu<sup>✉️</sup></p>
+                        <div class="paper-meta">
+                            <span class="paper-tag"><i class="bi bi-calendar-event"></i>2025</span>
+                            <span class="paper-tag"><i class="bi bi-patch-check"></i>Project</span>
+                        </div>
+                        <div class="paper-actions">
+                            <a class="paper-action" href="https://github.com/Ephemeral182" target="_blank" rel="noopener noreferrer">🌐 Project</a>
+                            <a class="paper-action" href="https://github.com/Ephemeral182" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="paper-row">
+                    <a class="paper-thumb image-wrapper" href="https://github.com/alexlai2860/SnowMaster.git" target="_blank" rel="noopener noreferrer" data-description="Project">
+                        <img src="static/assets/gallery/snowmaster.png" alt="SnowMaster">
+                    </a>
+                    <div class="paper-content">
+                        <h3 class="paper-title"><a href="https://github.com/alexlai2860/SnowMaster.git" target="_blank" rel="noopener noreferrer">SnowMaster: Comprehensive Real-world Image Desnowing via MLLM with Multi-Model Feedback Optimization</a></h3>
+                        <p class="paper-authors">Jianyu Lai<sup>*</sup>, Sixiang Chen<sup>*</sup>, Yunlong Lin, Tian Ye, Yun Liu, <strong><u>Song Fei</u></strong>, Zhaohu Xing, Hongtao Wu, Weiming Wang, Lei Zhu<sup>✉️</sup></p>
+                        <p class="paper-author-notes"><sup>*</sup> Equal Contribution</p>
+                        <div class="paper-meta">
+                            <span class="paper-tag"><i class="bi bi-calendar-event"></i>2025</span>
+                            <span class="paper-tag"><i class="bi bi-patch-check"></i>Project</span>
+                        </div>
+                        <div class="paper-actions">
+                            <a class="paper-action" href="https://github.com/alexlai2860/SnowMaster.git" target="_blank" rel="noopener noreferrer">🌐 Project</a>
+                            <a class="paper-action" href="https://github.com/alexlai2860/SnowMaster" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>GitHub</a>
+                        </div>
+                    </div>
+                </article>
             </main>
         </div>
     </section>
