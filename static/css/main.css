@@ -1264,3 +1264,62 @@ body.dark .stats-card {
         grid-template-columns: 1fr;
     }
 }
+
+/* ---------- awards: tidy rows ---------- */
+.award-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.42rem 0.6rem;
+    border-radius: 10px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.award-item:hover {
+    background: rgba(143, 112, 255, 0.07);
+    transform: translateX(3px);
+}
+
+.award-year {
+    flex: 0 0 auto;
+    min-width: 3.1rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #394078;
+    background: #eef0ff;
+    border: 1px solid rgba(57, 72, 210, 0.12);
+    border-radius: 999px;
+    padding: 0.22rem 0.55rem;
+}
+
+.award-medal {
+    flex: 0 0 auto;
+    font-size: 1.05rem;
+    line-height: 1;
+}
+
+.award-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.award-title {
+    color: #33415f;
+    font-size: 0.95rem;
+}
+
+body.dark .award-year {
+    background: rgba(142, 160, 255, 0.14);
+    border-color: var(--dark-border);
+    color: #c3cbff;
+}
+
+body.dark .award-title {
+    color: #c6cdea;
+}
+
+body.dark .award-item:hover {
+    background: rgba(142, 160, 255, 0.1);
+}
