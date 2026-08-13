@@ -20,10 +20,9 @@
     <link type="text/css" href="static/css/main.css" rel="stylesheet" />
 
     <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script type="text/javascript" src="static/js/marked.min.js"></script>
     <script type="text/javascript" src="static/js/mathjax-config.js"></script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
     <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
     <script type="text/javascript" src="static/js/scripts.js"></script>
 </head>
@@ -32,6 +31,10 @@
     <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-5">
             <a id="page-top-title" class="navbar-brand fw-bold" href="index.html"></a>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <i class="bi bi-moon-stars theme-icon-dark"></i>
+                <i class="bi bi-sun theme-icon-light"></i>
+            </button>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 MENU <i class="bi-list"></i>
@@ -59,16 +62,26 @@
     </nav>
 
     <section class="top-section fancy-hero" style="background-image: url('static/assets/img/background.jpeg');">
+        <div class="hero-aurora" aria-hidden="true">
+            <span class="aurora-blob blob-1"></span>
+            <span class="aurora-blob blob-2"></span>
+            <span class="aurora-blob blob-3"></span>
+        </div>
         <div class="top-section-content">
             <div class="container px-5 hero-content">
-                <h1 class="text-white display-4 lh-1">Song Fei</h1>
+                <p class="hero-chip"><i class="bi bi-stars"></i> MPhil Student &middot; AI Researcher</p>
+                <h1 class="text-white display-4 lh-1 hero-name">Song Fei <span class="hero-name-cn">费崧</span></h1>
+                <div class="hero-typing" aria-label="Research interests">
+                    <span id="typewriter-text"></span><span class="typewriter-cursor" aria-hidden="true"></span>
+                </div>
             </div>
         </div>
+        <a class="scroll-hint" href="#home" aria-label="Scroll down"><span class="mouse"><span class="wheel"></span></span></a>
     </section>
 
     <div class="container px-5 profile-photo-container">
         <div id="avatar">
-            <img class="shadow profile-photo" src="static/assets/img/photo.jpg" alt="Song Fei Profile Photo">
+            <span class="avatar-ring"><img class="shadow profile-photo" src="static/assets/img/photo.jpg" alt="Song Fei Profile Photo"></span>
         </div>
     </div>
 
@@ -95,6 +108,7 @@
                 <div class="news-section fade-in">
                     <div class="scrollable-news">
                         <ul>
+                            <li><span class="badge-new">NEW</span><strong>Jun. 2026: </strong> <a href="https://github.com/FeiSong123/S2DLight/" target="_blank"><strong>S2DLight</strong></a> & <strong>MoSE</strong> were accepted by MICCAI 2026.</li>
                             <li><strong>Feb. 2026: </strong> <a href="https://w2genai-lab.github.io/UltraFlux/" target="_blank"><strong>UltraFlux</strong></a> was accepted by CVPR 2026.</li>
                             <li><strong>Jan. 2026: </strong> <a href="https://w2genai-lab.github.io/LucidFlux/" target="_blank"><strong>LucidFlux</strong></a> & <a href="https://ephemeral182.github.io/PosterCraft/" target="_blank"><strong>PosterCraft</strong></a> were accepted by ICLR 2026.</li>
                             <li><strong>Jun. 2025: </strong> <a href="https://github.com/Ephemeral182" target="_blank"><strong>GenHaze</strong></a> was accepted by ICCV 2025.</li>
@@ -223,7 +237,7 @@
 
                 <article class="paper-row">
                     <a class="paper-thumb image-wrapper" href="https://github.com/FeiSong123/S2DLight" target="_blank" rel="noopener noreferrer" data-description="MICCAI 2026">
-                        <img src="static/assets/gallery/ultraflux.jpg" alt="UltraFlux">
+                        <img src="static/assets/gallery/s2dlight.png" alt="MoSE">
                     </a>
                     <div class="paper-content">
                         <h3 class="paper-title"><a href="https://github.com/FeiSong123/S2DLight/" target="_blank" rel="noopener noreferrer">MoSE: Mixture-of-Scale-Experts for Medical Image Restoration</a></h3>
@@ -434,6 +448,8 @@
             </div>
         </div>
     </footer>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top"><i class="bi bi-arrow-up"></i></button>
 
 </body>
 
