@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>404 · Song Fei</title>
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background: linear-gradient(160deg, #10162f, #1b2145 60%, #0e1226);
+            color: #e4e8ff;
+            font-family: "Mulish", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            overflow: hidden;
+        }
+
+        .nf-wrap {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .nf-code {
+            font-family: "Kanit", sans-serif;
+            font-size: clamp(5rem, 18vw, 11rem);
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(90deg, #8f70ff, #45d7ff, #8f70ff);
+            background-size: 220% 220%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: nfShift 6s linear infinite;
+        }
+
+        @keyframes nfShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .nf-title {
+            font-size: 1.35rem;
+            margin: 0.6rem 0 0.4rem;
+            font-weight: 600;
+        }
+
+        .nf-desc {
+            color: #9aa4d8;
+            margin-bottom: 1.8rem;
+        }
+
+        .nf-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.6rem 1.4rem;
+            border-radius: 999px;
+            background: linear-gradient(90deg, #8f70ff, #45d7ff);
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 10px 24px rgba(80, 60, 180, 0.35);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .nf-btn:hover {
+            transform: translateY(-3px);
+            color: #fff;
+            box-shadow: 0 16px 30px rgba(80, 60, 180, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nf-wrap">
+        <div class="nf-code">404</div>
+        <div class="nf-title">This page drifted away…</div>
+        <div class="nf-desc">Like a low-light endoscopic image, it needs restoration.</div>
+        <a class="nf-btn" href="index.html"><i class="bi bi-house-door-fill"></i> Back to Home</a>
+    </div>
+</body>
+
+</html>

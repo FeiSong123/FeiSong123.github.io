@@ -1063,3 +1063,204 @@ body.dark ::-webkit-scrollbar-thumb {
         transition: none !important;
     }
 }
+
+/* ==========================================================
+   v3 features: publications toolbar, home layout, toast
+   ========================================================== */
+
+/* ---------- publications toolbar ---------- */
+.pub-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.pub-search {
+    position: relative;
+    flex: 1 1 260px;
+    max-width: 420px;
+}
+
+.pub-search i {
+    position: absolute;
+    left: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7aad;
+    font-size: 0.9rem;
+    pointer-events: none;
+}
+
+.pub-search input {
+    width: 100%;
+    padding: 0.55rem 1rem 0.55rem 2.2rem;
+    border-radius: 999px;
+    border: 1px solid var(--card-border);
+    background: rgba(255, 255, 255, 0.85);
+    color: #20254d;
+    font-size: 0.92rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pub-search input:focus {
+    border-color: var(--accent-a);
+    box-shadow: 0 0 0 3px rgba(143, 112, 255, 0.15);
+}
+
+.pub-filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.filter-chip {
+    border: 1px solid rgba(57, 72, 210, 0.22);
+    background: #fff;
+    color: #394078;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 0.32rem 0.75rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.22s ease;
+}
+
+.filter-chip:hover {
+    border-color: var(--accent-a);
+    color: var(--accent-a);
+    transform: translateY(-1px);
+}
+
+.filter-chip.active {
+    background: linear-gradient(90deg, var(--accent-a), var(--accent-b));
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 6px 14px rgba(143, 112, 255, 0.3);
+}
+
+.paper-row.hidden {
+    display: none;
+}
+
+.empty-state {
+    text-align: center;
+    color: #6b7aad;
+    padding: 2rem 0;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* ---------- cite button (button reset) ---------- */
+.cite-btn {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.cite-btn:hover {
+    background: linear-gradient(90deg, var(--accent-a), var(--accent-b));
+    border-color: transparent;
+    color: #fff;
+}
+
+/* ---------- home layout: about + github stats ---------- */
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 1.4rem;
+    align-items: start;
+}
+
+.home-layout .main-content {
+    min-width: 0;
+}
+
+.stats-card {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(115, 120, 255, 0.18);
+    border-radius: 18px;
+    padding: 0.9rem;
+    box-shadow: 0 8px 25px rgba(74, 84, 170, 0.12);
+    overflow: hidden;
+}
+
+.stats-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* ---------- toast ---------- */
+.site-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 2rem;
+    transform: translate(-50%, 16px);
+    z-index: 20000;
+    padding: 0.6rem 1.1rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent-a), var(--accent-b));
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 12px 28px rgba(80, 60, 180, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.site-toast.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* ---------- dark mode: new components ---------- */
+body.dark .pub-search input {
+    background: rgba(26, 33, 69, 0.85);
+    border-color: var(--dark-border);
+    color: var(--dark-text);
+}
+
+body.dark .pub-search input::placeholder {
+    color: var(--dark-muted);
+}
+
+body.dark .pub-search i {
+    color: var(--dark-muted);
+}
+
+body.dark .filter-chip {
+    background: var(--dark-card);
+    border-color: var(--dark-border);
+    color: #c3cbff;
+}
+
+body.dark .filter-chip:hover {
+    border-color: var(--dark-link);
+    color: var(--dark-link);
+}
+
+body.dark .filter-chip.active {
+    background: linear-gradient(90deg, var(--accent-a), var(--accent-b));
+    color: #fff;
+}
+
+body.dark .empty-state {
+    color: var(--dark-muted);
+}
+
+body.dark .stats-card {
+    background: rgba(26, 33, 69, 0.75);
+    border-color: var(--dark-border);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- responsive ---------- */
+@media screen and (max-width: 992px) {
+    .home-layout {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,172 @@
+# Publications data — edit this file to update the Publications page.
+# Fields:
+#   key         unique id (used for the BibTeX citation key)
+#   title       paper title
+#   authors     HTML string for the author line (use <strong><u>…</u></strong> to highlight yourself)
+#   notes       optional footnote line (e.g. equal contribution)
+#   venue       venue tag label (e.g. "CVPR 2026 Highlight")
+#   extra_tags  optional additional tags, e.g. [{icon: bi-calendar-event, label: "2025"}]
+#   year        publication year (used by the counters)
+#   category    one of: cvpr-iccv | iclr-neurips | miccai | other (used by the filter chips)
+#   bib_type    inproceedings | article | misc (used by the Cite button)
+#   thumb       thumbnail image path
+#   alt         thumbnail alt text
+#   links       list of {label, icon, url} buttons
+#   repos       optional list of {owner, repo} to show star/fork badges
+papers:
+  - key: s2dlight2026
+    title: "S2DLight: Single Step Diffusion Network via Degradation-Aware Adaptation for Surgical Endoscopic Image Low-Light Enhancement"
+    authors: "<strong><u>Song Fei</u></strong>, Guanyi Wang, Tian Ye, Sixiang Chen, Jianyu Lai, Lei Zhu<sup>✉️</sup>"
+    venue: "MICCAI 2026"
+    year: 2026
+    category: miccai
+    bib_type: inproceedings
+    thumb: static/assets/gallery/s2dlight.png
+    alt: S2DLight
+    links:
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/FeiSong123/S2DLight/" }
+
+  - key: mose2026
+    title: "MoSE: Mixture-of-Scale-Experts for Medical Image Restoration"
+    authors: "Xingyu Li, Zhaohu Xing, Zekai Liu, Shuaibo Li, Hongqiu Wang, <strong><u>Song Fei</u></strong>, Lei Zhu<sup>✉️</sup>"
+    venue: "MICCAI 2026"
+    year: 2026
+    category: miccai
+    bib_type: inproceedings
+    thumb: static/assets/gallery/s2dlight.png
+    alt: MoSE
+    links:
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/FeiSong123/S2DLight/" }
+
+  - key: lucidnft2026
+    title: "LucidNFT: LR-Anchored Multi-Reward Preference Optimization for Generative Real-World Super-Resolution"
+    authors: "<strong><u>Song Fei</u></strong><sup>*</sup>, Tian Ye<sup>*</sup>, Sixiang Chen, Zhaohu Xing, Jianyu Lai, Lei Zhu<sup>✉️</sup>"
+    notes: "<sup>*</sup> Equal Contribution"
+    venue: "arxiv"
+    year: 2026
+    category: other
+    bib_type: article
+    thumb: static/assets/gallery/lucidnft.png
+    alt: LucidNFT
+    links:
+      - { label: "Paper", icon: "", url: "https://arxiv.org/pdf/2603.05947" }
+      - { label: "Website", icon: "", url: "https://w2genai-lab.github.io/LucidNFT/" }
+      - { label: "HuggingFace", icon: "", url: "https://huggingface.co/W2GenAI/LucidNFT" }
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/W2GenAI-Lab/LucidNFT" }
+    repos:
+      - { owner: W2GenAI-Lab, repo: LucidNFT }
+
+  - key: ultraflux2026
+    title: "UltraFlux: Data-Model Co-Design for High-quality Native 4K Text-to-Image Generation across Diverse Aspect Ratios"
+    authors: "Tian Ye<sup>*‡</sup>, <strong><u>Song Fei</u></strong><sup>*</sup>, Lei Zhu<sup>✉️</sup>"
+    notes: "<sup>*</sup> Equal Contribution · <sup>‡</sup> Project Leader"
+    venue: "CVPR 2026 Highlight"
+    year: 2026
+    category: cvpr-iccv
+    bib_type: inproceedings
+    thumb: static/assets/gallery/ultraflux.jpg
+    alt: UltraFlux
+    links:
+      - { label: "Paper", icon: "", url: "http://arxiv.org/abs/2509.22414" }
+      - { label: "Website", icon: "", url: "https://w2genai-lab.github.io/UltraFlux/" }
+      - { label: "HuggingFace", icon: "", url: "https://huggingface.co/Owen777/UltraFlux-v1" }
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/W2GenAI-Lab/UltraFlux" }
+    repos:
+      - { owner: W2GenAI-Lab, repo: UltraFlux }
+
+  - key: lucidflux2026
+    title: "LucidFlux: Caption-Free Photo-Realistic Image Restoration with a Large-Scale Diffusion Transformer"
+    authors: "<strong><u>Song Fei</u></strong><sup>*</sup>, Tian Ye<sup>*‡</sup>, Lujia Wang, Lei Zhu<sup>✉️</sup>"
+    notes: "<sup>*</sup> Equal Contribution · <sup>‡</sup> Project Leader"
+    venue: "ICLR 2026"
+    year: 2026
+    category: iclr-neurips
+    bib_type: inproceedings
+    thumb: static/assets/gallery/lucidflux.png
+    alt: LucidFlux
+    links:
+      - { label: "Paper", icon: "", url: "http://arxiv.org/abs/2509.22414" }
+      - { label: "Website", icon: "", url: "https://w2genai-lab.github.io/LucidFlux/" }
+      - { label: "HuggingFace", icon: "", url: "https://huggingface.co/W2GenAI/LucidFlux" }
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/W2GenAI-Lab/LucidFlux" }
+    repos:
+      - { owner: W2GenAI-Lab, repo: LucidFlux }
+
+  - key: postercraft2026
+    title: "PosterCraft: Rethinking High-Quality Aesthetic Poster Generation in a Unified Framework"
+    authors: "Sixiang Chen<sup>*</sup>, Jianyu Lai<sup>*</sup>, Jialin Gao<sup>*</sup>, Tian Ye, Haoyu Chen, Hengyu Shi, Shitong Shao, Yunlong Lin, <strong><u>Song Fei</u></strong>, Zhaohu Xing, Yeying Jin, Junfeng Luo, Xiaoming Wei, Lei Zhu<sup>✉️</sup>"
+    notes: "<sup>*</sup> Equal Contribution"
+    venue: "ICLR 2026"
+    year: 2026
+    category: iclr-neurips
+    bib_type: inproceedings
+    thumb: static/assets/gallery/postercraft.png
+    alt: PosterCraft
+    links:
+      - { label: "Paper", icon: "", url: "https://arxiv.org/abs/2506.10741" }
+      - { label: "Website", icon: "", url: "https://ephemeral182.github.io/PosterCraft/" }
+      - { label: "HuggingFace", icon: "", url: "https://huggingface.co/PosterCraft/" }
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/Ephemeral182/PosterCraft" }
+    repos:
+      - { owner: Ephemeral182, repo: PosterCraft }
+
+  - key: nanobanana2025
+    title: "Nano-Banana-Figure: LoRA Adapter for Figure-style Image Editing"
+    authors: "<strong><u>Song Fei</u></strong>, Tian Ye"
+    venue: "Project"
+    extra_tags:
+      - { icon: bi-calendar-event, label: "2025" }
+    year: 2025
+    category: other
+    bib_type: misc
+    thumb: static/assets/gallery/nanobanana-figure.png
+    alt: Nano-Banana-Figure
+    links:
+      - { label: "Website", icon: "", url: "https://w2genai-lab.github.io/Nano-Banana-Figure" }
+      - { label: "HuggingFace", icon: "", url: "https://huggingface.co/W2GenAI/Nano-Banana-Figure-LoRA" }
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/W2GenAI-Lab/Nano-Banana-Figure" }
+
+  - key: kontextstyle2025
+    title: "Kontext-Style: Open Community for Artistic Style Transfer and LoRA Adapters"
+    authors: "Tian Ye, <strong><u>Song Fei</u></strong>"
+    venue: "Project"
+    extra_tags:
+      - { icon: bi-calendar-event, label: "2025" }
+    year: 2025
+    category: other
+    bib_type: misc
+    thumb: static/assets/gallery/kontext-style.jpg
+    alt: Kontext-Style
+    links:
+      - { label: "Website", icon: "", url: "https://w2genai-lab.github.io/Kontext-Style/" }
+      - { label: "HuggingFace", icon: "", url: "https://huggingface.co/Kontext-Style" }
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/W2GenAI-Lab/Kontext-Style" }
+
+  - key: genhaze2025
+    title: "GenHaze: Pioneering Controllable One-Step Realistic Haze Generation for Real-World Dehazing"
+    authors: "Sixiang Chen, Tian Ye, Yunlong Lin, Yeying Jin, Yijun Yang, Haoyu Chen, Jianyu Lai, <strong><u>Song Fei</u></strong>, Zhaohu Xing, Fugee Tsung, Lei Zhu<sup>✉️</sup>"
+    venue: "ICCV 2025"
+    year: 2025
+    category: cvpr-iccv
+    bib_type: inproceedings
+    thumb: static/assets/gallery/genhaze.png
+    alt: GenHaze
+    links:
+      - { label: "Paper", icon: "", url: "https://openaccess.thecvf.com/content/ICCV2025/papers/Chen_GenHaze_Pioneering_Controllable_One-Step_Realistic_Haze_Generation_for_Real-World_Dehazing_ICCV_2025_paper.pdf" }
+      - { label: "Website", icon: "", url: "https://github.com/Ephemeral182" }
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/Ephemeral182" }
+
+  - key: snowmaster2025
+    title: "SnowMaster: Comprehensive Real-world Image Desnowing via MLLM with Multi-Model Feedback Optimization"
+    authors: "Jianyu Lai<sup>*</sup>, Sixiang Chen<sup>*</sup>, Yunlong Lin, Tian Ye, Yun Liu, <strong><u>Song Fei</u></strong>, Zhaohu Xing, Hongtao Wu, Weiming Wang, Lei Zhu<sup>✉️</sup>"
+    notes: "<sup>*</sup> Equal Contribution"
+    venue: "CVPR 2025"
+    year: 2025
+    category: cvpr-iccv
+    bib_type: inproceedings
+    thumb: static/assets/gallery/snowmaster.png
+    alt: SnowMaster
+    links:
+      - { label: "Paper", icon: "", url: "https://openaccess.thecvf.com/content/CVPR2025/papers/Lai_SnowMaster_Comprehensive_Real-world_Image_Desnowing_via_MLLM_with_Multi-Model_Feedback_CVPR_2025_paper.pdf" }
+      - { label: "Website", icon: "", url: "https://github.com/alexlai2860/SnowMaster.git" }
+      - { label: "GitHub", icon: "bi-github", url: "https://github.com/alexlai2860/SnowMaster" }
