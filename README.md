@@ -8,7 +8,7 @@
 
 ## 🧑‍🎓 About Me
 
-🎓 **Mphil Student & AI Researcher** at Hong Kong University of Science and Technology (Guangzhou)  
+🎓 **PhD Student & AI Researcher** at Hong Kong University of Science and Technology (Guangzhou)  
 🔬 **Research Focus**: AIGC, Image Restoration  
 📍 **Location**: Guangzhou, China  
 👨‍🏫 **Supervisor**: [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home)  
@@ -20,6 +20,7 @@
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=FeiSong123&show_icons=true&theme=radical&hide_border=true&card_width=400&card_height=280&bg_color=1a1b27&title_color=8B5CF6&text_color=a9b1d6&icon_color=bb9af7" alt="GitHub Stats" />
 
 ### 🌟 Latest News
+- **Aug. 2026**: Completed MPhil study and started PhD study at HKUST (Guangzhou).
 - **Feb. 2026**: [UltraFlux](https://w2genai-lab.github.io/UltraFlux/) was accepted by CVPR 2026.
 - **Jan. 2026**: [LucidFlux](https://w2genai-lab.github.io/LucidFlux/) and [PosterCraft](https://ephemeral182.github.io/PosterCraft/) were accepted by ICLR 2026.
 - **Jun. 2025**: [GenHaze](https://github.com/Ephemeral182) was accepted by ICCV 2025.

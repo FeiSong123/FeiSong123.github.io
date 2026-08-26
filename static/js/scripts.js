@@ -10,7 +10,7 @@ const TYPEWRITER_ROLES = [
     'AIGC Researcher',
     'Image Restoration',
     'Low-level Vision',
-    'MPhil @ HKUST(GZ)',
+    'PhD @ HKUST(GZ)',
     'Robotics Enthusiast'
 ];
 
