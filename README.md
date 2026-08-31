@@ -34,7 +34,7 @@
 
 <div align="center">
 
-🌐 **Website**: [feisong123.github.io](https://feisong123.github.io/) | 🎓 **Scholar**: [Google Scholar](https://scholar.google.com/citations?user=3Kj6HaoAAAAJ) | 📧 **Email**: [sfei285@connect.hkust-gz.edu.cn](mailto:sfei285@connect.hkust-gz.edu.cn)
+🌐 **Website**: [feisong123.github.io](https://feisong123.github.io/) | 🎓 **Scholar**: [Google Scholar](https://scholar.google.com/citations?user=3Kj6HaoAAAAJ) | 📄 **CV**: [SongFei-CV](https://github.com/FeiSong123/SongFei-CV) | 📧 **Email**: [sfei285@connect.hkust-gz.edu.cn](mailto:sfei285@connect.hkust-gz.edu.cn)
 
 <br>
 
