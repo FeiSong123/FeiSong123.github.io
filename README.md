@@ -20,6 +20,7 @@
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=FeiSong123&show_icons=true&theme=radical&hide_border=true&card_width=400&card_height=280&bg_color=1a1b27&title_color=8B5CF6&text_color=a9b1d6&icon_color=bb9af7" alt="GitHub Stats" />
 
 ### 🌟 Latest News
+- **Aug. 2026**: [LucidNFT](https://w2genai-lab.github.io/LucidNFT/) was accepted by NeurIPS 2026.
 - **Aug. 2026**: Completed MPhil study and became a PhD student at HKUST (Guangzhou).
 - **Feb. 2026**: [UltraFlux](https://w2genai-lab.github.io/UltraFlux/) was accepted by CVPR 2026.
 - **Jan. 2026**: [LucidFlux](https://w2genai-lab.github.io/LucidFlux/) and [PosterCraft](https://ephemeral182.github.io/PosterCraft/) were accepted by ICLR 2026.

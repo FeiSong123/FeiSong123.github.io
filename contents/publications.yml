@@ -42,10 +42,10 @@ papers:
     title: "LucidNFT: LR-Anchored Multi-Reward Preference Optimization for Generative Real-World Super-Resolution"
     authors: "<strong><u>Song Fei</u></strong><sup>*</sup>, Tian Ye<sup>*</sup>, Sixiang Chen, Zhaohu Xing, Jianyu Lai, Lei Zhu<sup>✉️</sup>"
     notes: "<sup>*</sup> Equal Contribution"
-    venue: "arxiv"
+    venue: "NeurIPS 2026"
     year: 2026
-    category: other
-    bib_type: article
+    category: iclr-neurips
+    bib_type: inproceedings
     thumb: static/assets/gallery/lucidnft.png
     alt: LucidNFT
     links:
