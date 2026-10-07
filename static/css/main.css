@@ -1165,32 +1165,16 @@ body.dark ::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
-/* ---------- home layout: about + github stats ---------- */
+/* ---------- home layout: about ---------- */
 .home-layout {
     display: grid;
-    grid-template-columns: 1fr 340px;
+    grid-template-columns: 1fr;
     gap: 1.4rem;
     align-items: start;
 }
 
 .home-layout .main-content {
     min-width: 0;
-}
-
-.stats-card {
-    background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(115, 120, 255, 0.18);
-    border-radius: 18px;
-    padding: 0.9rem;
-    box-shadow: 0 8px 25px rgba(74, 84, 170, 0.12);
-    overflow: hidden;
-}
-
-.stats-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
 }
 
 /* ---------- toast ---------- */
@@ -1250,19 +1234,6 @@ body.dark .filter-chip.active {
 
 body.dark .empty-state {
     color: var(--dark-muted);
-}
-
-body.dark .stats-card {
-    background: rgba(26, 33, 69, 0.75);
-    border-color: var(--dark-border);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
-}
-
-/* ---------- responsive ---------- */
-@media screen and (max-width: 992px) {
-    .home-layout {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* ---------- awards: tidy rows ---------- */
