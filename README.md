@@ -17,6 +17,7 @@
 
 ## 📰 Latest News
 
+- **Nov. 2026**: Updated the [LucidNFT](https://arxiv.org/abs/2603.05947) paper; a reward-independent human study preferred its results for LR faithfulness in 72.5% of comparisons.
 - **Aug. 2026**: [LucidNFT](https://w2genai-lab.github.io/LucidNFT/) was accepted by NeurIPS 2026.
 - **Aug. 2026**: Completed MPhil study and became a PhD student at HKUST (Guangzhou).
 - **Feb. 2026**: [UltraFlux](https://w2genai-lab.github.io/UltraFlux/) was accepted by CVPR 2026.

@@ -39,7 +39,7 @@ papers:
       - { label: "GitHub", icon: "bi-github", url: "https://github.com/FeiSong123/S2DLight/" }
 
   - key: lucidnft2026
-    title: "LucidNFT: LR-Anchored Multi-Reward Preference Optimization for Generative Real-World Super-Resolution"
+    title: "LucidNFT: LR-Anchored Multi-Reward Preference Optimization for Flow-Based Real-World Super-Resolution"
     authors: "<strong><u>Song Fei</u></strong><sup>*</sup>, Tian Ye<sup>*</sup>, Sixiang Chen, Zhaohu Xing, Jianyu Lai, Lei Zhu<sup>✉️</sup>"
     notes: "<sup>*</sup> Equal Contribution"
     venue: "NeurIPS 2026"
