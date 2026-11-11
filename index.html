@@ -20,9 +20,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
 
     <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
     <link type="text/css" href="static/css/main.css" rel="stylesheet" />
@@ -36,23 +34,22 @@
 </head>
 
 <body id="page-top" class="page-shell">
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="header navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
         <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="index.html"></a>
-            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
-                <i class="bi bi-moon-stars theme-icon-dark"></i>
-                <i class="bi bi-sun theme-icon-light"></i>
-            </button>
+            <a class="navbar-brand brand-lockup" href="index.html#page-top"><span class="brand-mark">SF<span>.</span></span><span id="page-top-title" class="brand-name"></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU <i class="bi-list"></i>
+                <span class="menu-label">MENU</span><i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html#home">ABOUT ME</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html?view=publications#publications">PUBLICATIONS</a></li>
+                <ul class="navbar-nav ms-auto my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#featured">Selected work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle me-lg-3" href="#" id="paperWebDropdownIndex" role="button" data-bs-toggle="dropdown" aria-expanded="false">PAPER WEB</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="paperWebDropdownIndex" role="button" data-bs-toggle="dropdown" aria-expanded="false">Paper sites</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="paperWebDropdownIndex">
                             <li><a class="dropdown-item" href="https://w2genai-lab.github.io/LucidNFT/" target="_blank">LucidNFT</a></li>
                             <li><a class="dropdown-item" href="https://w2genai-lab.github.io/UltraFlux/" target="_blank">UltraFlux</a></li>
@@ -65,41 +62,60 @@
                         </ul>
                     </li>
                 </ul>
+                <a class="nav-contact" href="mailto:sfei285@connect.hkust-gz.edu.cn">Let's connect <i class="bi bi-arrow-up-right"></i></a>
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+                    <i class="bi bi-sun theme-icon-light"></i>
+                    <i class="bi bi-moon-stars theme-icon-dark"></i>
+                </button>
             </div>
         </div>
     </nav>
 
-    <section class="top-section fancy-hero" style="background-image: url('static/assets/img/background.jpeg');">
-        <div class="hero-aurora" aria-hidden="true">
-            <span class="aurora-blob blob-1"></span>
-            <span class="aurora-blob blob-2"></span>
-            <span class="aurora-blob blob-3"></span>
-        </div>
-        <div class="top-section-content">
-            <div class="container px-5 hero-content">
-                <p class="hero-chip"><i class="bi bi-stars"></i> PhD student &middot; AI Researcher</p>
-                <h1 class="text-white display-4 lh-1 hero-name">Song Fei <span class="hero-name-cn">费崧</span></h1>
-                <div class="hero-typing" aria-label="Research interests">
-                    <span id="typewriter-text"></span><span class="typewriter-cursor" aria-hidden="true"></span>
+    <main id="main-content">
+    <section class="top-section fancy-hero" id="top">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="container px-5 hero-layout">
+            <div class="hero-copy">
+                <p class="hero-eyebrow"><span class="live-dot"></span> PHD RESEARCHER <span class="eyebrow-divider">/</span> HKUST (GUANGZHOU)</p>
+                <h1 class="hero-name">Song Fei<span class="hero-period">.</span><span class="hero-name-cn">费崧</span></h1>
+                <p class="hero-description">PhD student at HKUST (Guangzhou). My research focuses on generative models for image synthesis, restoration, and super-resolution.</p>
+                <div class="hero-actions">
+                    <a class="button-primary" href="#featured">Explore research <i class="bi bi-arrow-up-right"></i></a>
+                    <a class="button-text" href="#home">Meet the researcher <i class="bi bi-arrow-right"></i></a>
                 </div>
+                <div class="hero-signals"><span>GENERATIVE VISION</span><span>IMAGE RESTORATION</span><span>AGENTIC AI</span></div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <div class="art-orbit orbit-one"></div>
+                <div class="art-orbit orbit-two"></div>
+                <div class="art-main">
+                    <div class="art-main-image"></div>
+                    <div class="art-main-overlay"><span>01 / ULTRAFLUX</span><strong>CVPR 2026 Highlight</strong></div>
+                </div>
+                <div class="art-float art-float-top"><span class="float-spark">✳</span><span>NATIVE 4K<br>GENERATION</span></div>
+                <div class="art-float art-float-bottom"><span class="float-mini-image"></span><span>02 / LUCIDFLUX<br><strong>ICLR 2026</strong></span></div>
+                <div class="art-axis">RESEARCH / 2026</div>
             </div>
         </div>
-        <a class="scroll-hint" href="#home" aria-label="Scroll down"><span class="mouse"><span class="wheel"></span></span></a>
+        <a class="scroll-hint" href="#featured" aria-label="Scroll to selected work"><span>SCROLL TO EXPLORE</span><i class="bi bi-arrow-down"></i></a>
     </section>
 
-    <div class="container px-5 profile-photo-container">
-        <div id="avatar">
-            <span class="avatar-ring"><img class="shadow profile-photo" src="static/assets/img/photo.jpg" alt="Song Fei Profile Photo"></span>
-        </div>
-    </div>
+    <div class="venue-rail" aria-label="Research venues"><div class="venue-rail-inner"><span>NEURIPS 2026</span><span class="rail-symbol">✳</span><span>CVPR 2026</span><span class="rail-symbol">✳</span><span>ICLR 2026</span><span class="rail-symbol">✳</span><span>ICCV 2025</span><span class="rail-symbol">✳</span><span>MICCAI 2026</span></div></div>
 
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+    <section class="section-shell featured-section" id="featured">
         <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"></h2>
-            </header>
-            <main class="home-layout">
+            <div class="section-heading"><div><p class="section-index">01 / SELECTED WORK</p><h2>Research in <em>focus.</em></h2></div><a class="section-link" href="#publications">All publications <i class="bi bi-arrow-up-right"></i></a></div>
+            <div id="featured-projects" class="featured-grid" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <section class="section-shell about-section" id="home">
+        <div class="container px-5">
+            <div class="section-heading"><div><p class="section-index">02 / ABOUT</p><h2>Hi, I'm <em>Song.</em></h2></div></div>
+            <div class="home-layout">
+                <div class="about-photo-wrap"><img class="profile-photo" src="static/assets/img/photo.jpg" alt="Portrait of Song Fei" loading="lazy"><span class="photo-caption">SONG FEI / 费崧</span></div>
                 <div class="main-content">
+                    <p class="about-kicker">RESEARCHER · MAKER · EXPLORER</p>
                     <p class="about-links-inline">
                         <a href="mailto:sfei285@connect.hkust-gz.edu.cn" target="_blank"><i class="bi bi-envelope-fill"></i> Email</a>
                         <a href="https://github.com/FeiSong123" target="_blank"><i class="bi bi-github"></i> GitHub</a>
@@ -108,44 +124,79 @@
                         <a href="static/assets/CV.pdf" target="_blank"><i class="bi bi-file-earmark-person-fill"></i> CV</a>
                     </p>
                     <div id="home-md" data-md-section="home"></div>
+                    <a class="about-cta" href="static/assets/CV.pdf" target="_blank" rel="noopener noreferrer">Download CV <i class="bi bi-arrow-down-right"></i></a>
                 </div>
-            </main>
+            </div>
         </div>
     </section>
 
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="interests">
+    <section class="section-shell interests-section" id="interests">
         <div class="container px-5">
-            <h2 class="panel-title-blue">🎯 Research Interests</h2>
-            <main class="main-content">
+            <div class="section-heading"><div><p class="section-index">03 / DIRECTION</p><h2>Where curiosity <em>goes.</em></h2></div></div>
+            <div class="main-content">
                 <div class="quick-nav-grid">
-                    <a class="quick-nav-card" href="index.html?view=publications#publications">
+                    <a class="quick-nav-card" href="#publications">
                         <i class="bi bi-stars"></i>
+                        <span class="interest-number">01 /</span>
                         <h3>AIGC</h3>
                         <p>Diffusion models, generative editing, foundation-model-driven image synthesis.</p>
                     </a>
-                    <a class="quick-nav-card" href="index.html?view=publications#publications">
+                    <a class="quick-nav-card" href="#publications">
                         <i class="bi bi-brightness-high"></i>
+                        <span class="interest-number">02 /</span>
                         <h3>Image Restoration</h3>
                         <p>Low-level vision: dehazing, desnowing, low-light enhancement, super-resolution.</p>
                     </a>
                     <a class="quick-nav-card" href="https://github.com/FeiSong123" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-lightning-charge-fill"></i>
+                        <span class="interest-number">03 /</span>
                         <h3>Agentic AI</h3>
                         <p>Agentic workflows, LLM-driven reasoning, autonomous research pipelines.</p>
                     </a>
                 </div>
-            </main>
+            </div>
         </div>
     </section>
 
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="news">
+    <section class="section-shell publications-section" id="publications">
         <div class="container px-5">
-            <h2 class="panel-title-blue">📰 News and Updates</h2>
-            <main class="main-content">
+            <div class="section-heading"><div><p class="section-index">04 / LIBRARY</p><h2>Every idea, <em>documented.</em></h2></div><p class="section-side-note">A growing collection of work in generative vision and visual restoration.</p></div>
+            <div class="intro-counters">
+                <div class="counter-card">
+                    <div class="counter-value" data-counter="cv">0</div>
+                    <div class="counter-label">CVPR / ICCV / ECCV</div>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-value" data-counter="ml">0</div>
+                    <div class="counter-label">NeurIPS / ICLR / ICML</div>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-value" data-counter="med">0</div>
+                    <div class="counter-label">MICCAI</div>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-value" data-counter="projects">0</div>
+                    <div class="counter-label">OPEN PROJECTS</div>
+                </div>
+            </div>
+            <div class="pub-toolbar">
+                <div class="pub-search">
+                    <i class="bi bi-search"></i>
+                    <input id="pub-search-input" type="search" placeholder="Search by title or author…" aria-label="Search publications" autocomplete="off" />
+                </div>
+                <div id="pub-filter-chips" class="pub-filter-chips" role="group" aria-label="Filter by venue"></div>
+            </div>
+            <div id="publications-list" class="main-content publication-list" data-source="yaml"></div>
+        </div>
+    </section>
+
+    <section class="section-shell news-section-wrap" id="news">
+        <div class="container px-5">
+            <div class="section-heading"><div><p class="section-index">05 / UPDATES</p><h2>From the <em>lab.</em></h2></div></div>
+            <div class="main-content">
                 <div class="news-section fade-in">
                     <div class="scrollable-news">
                         <ul>
-                            <li><strong>Nov. 2026: </strong> Updated the <a href="https://arxiv.org/abs/2603.05947" target="_blank"><strong>LucidNFT</strong></a> paper. In a reward-independent human study, its results were preferred for LR faithfulness in 72.5% of comparisons.</li>
                             <li><strong>Sep. 2026: </strong> <strong>S2DRain</strong> was accepted by ACM TOMM.</li>
                             <li><strong>Aug. 2026: </strong> <a href="https://w2genai-lab.github.io/LucidNFT/" target="_blank"><strong>LucidNFT</strong></a> was accepted by NeurIPS 2026.</li>
                             <li><strong>Aug. 2026: </strong> Completed MPhil study and became a PhD student at <strong>HKUST (Guangzhou)</strong>.</li>
@@ -159,14 +210,14 @@
                         </ul>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
     </section>
 
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="awards">
+    <section class="section-shell service-section-wrap" id="awards">
         <div class="container px-5">
-            <h2 class="panel-title-blue">🎖️ Academic Service &amp; Awards</h2>
-            <main class="main-content">
+            <div class="section-heading"><div><p class="section-index">06 / COMMUNITY</p><h2>Beyond the <em>papers.</em></h2></div></div>
+            <div class="main-content">
                 <div class="service-section fade-in">
                     <div class="service-card">
                         <p><strong>Reviewer:</strong></p>
@@ -238,14 +289,14 @@
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
     </section>
 
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="education-experience">
+    <section class="section-shell timeline-section" id="education-experience">
         <div class="container px-5">
-            <h2 class="panel-title-blue">🎓 Education &amp; Experience</h2>
-            <main class="main-content">
+            <div class="section-heading"><div><p class="section-index">07 / PATH</p><h2>The road <em>so far.</em></h2></div></div>
+            <div class="main-content">
                 <div class="experience-card">
                     <ul class="experience-list">
                         <!-- <li><strong>Dec. 2025 - Jun. 2026:</strong> Research Intern, OPPO Research Institute</li> -->
@@ -254,57 +305,25 @@
                         <li><strong>Sep. 2020 - Jun. 2024:</strong> B.Eng., Northeastern University</li>
                     </ul>
                 </div>
-            </main>
+            </div>
         </div>
     </section>
 
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5 publications-hidden" id="publications">
-        <div class="container px-5">
-            <h2 class="panel-title-blue">📚 Publications</h2>
-            <div class="intro-counters">
-                <div class="counter-card">
-                    <div class="counter-value" data-counter="cv">0</div>
-                    <div class="counter-label">CVPR / ICCV / ECCV</div>
-                </div>
-                <div class="counter-card">
-                    <div class="counter-value" data-counter="ml">0</div>
-                    <div class="counter-label">NeurIPS / ICLR / ICML</div>
-                </div>
-                <div class="counter-card">
-                    <div class="counter-value" data-counter="ai">0</div>
-                    <div class="counter-label">AAAI / IJCAI / ACM MM</div>
-                </div>
-                <div class="counter-card">
-                    <div class="counter-value" data-counter="med">0</div>
-                    <div class="counter-label">MICCAI</div>
-                </div>
-            </div>
-            <div class="pub-toolbar">
-                <div class="pub-search">
-                    <i class="bi bi-search"></i>
-                    <input id="pub-search-input" type="search" placeholder="Search by title or author…" aria-label="Search publications" autocomplete="off" />
-                </div>
-                <div id="pub-filter-chips" class="pub-filter-chips" role="group" aria-label="Filter by venue"></div>
-            </div>
-            <main id="publications-list" class="main-content publication-list" data-source="yaml"></main>
 
-                
-        </div>
-    </section>
 
-    <footer class="bg-bottom text-center py-5">
+    </main>
+
+    <footer class="site-footer">
         <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="template-credit" href="https://github.com/Yixin0313/personal-homepage-template" target="_blank"></a>
-                <span class="mx-1">&middot;</span>
+            <div class="footer-top"><p>Song Fei <em>费崧</em></p><a href="mailto:sfei285@connect.hkust-gz.edu.cn">Email me <i class="bi bi-arrow-up-right"></i></a></div>
+            <div class="footer-bottom">
+                <div id="copyright-text"></div>
                 <span class="footer-icons">
                     <a class="footer-icon-link" id="github-link" href="https://github.com/FeiSong123" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
                     <a class="footer-icon-link" id="linkedin-link" href="https://www.linkedin.com/in/song-fei-24104a406/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     <a class="footer-icon-link" id="scholar-link" href="https://scholar.google.com/citations?user=3Kj6HaoAAAAJ" target="_blank" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
                     <a class="footer-icon-link" id="cv-link" href="static/assets/CV.pdf" target="_blank" aria-label="CV"><i class="bi bi-file-earmark-person-fill"></i></a>
                 </span>
-                <span class="mx-1">&middot;</span>
                 <a id="license-link" href="https://github.com/FeiSong123/FeiSong123.github.io/blob/main/LICENSE">License</a>
             </div>
         </div>
