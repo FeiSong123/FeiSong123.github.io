@@ -105,11 +105,11 @@ function renderFeatured() {
     }
     const keys = ['lucidnft2026', 'ultraflux2026', 'lucidflux2026'];
     const featured = keys.map(key => pubData.find(p => p.key === key)).filter(Boolean);
-    wrap.innerHTML = featured.map((p, index) => {
+    wrap.innerHTML = featured.map(p => {
         const href = ((p.links || []).find(link => link.label === 'Website') || (p.links || [])[0] || {}).url || '#publications';
         const [name, ...rest] = p.title.split(':');
         return `<a class="featured-card" href="${href}" target="_blank" rel="noopener noreferrer">
-            <span class="featured-image"><img src="${p.thumb}" alt="${p.alt || name}" loading="lazy"><span class="featured-index">0${index + 1} / 03</span></span>
+            <span class="featured-image"><img src="${p.thumb}" alt="${p.alt || name}" loading="lazy"></span>
             <span class="featured-copy"><span class="featured-venue">${p.venue}</span><strong>${name}</strong><span class="featured-subtitle">${rest.join(':').trim()}</span><span class="featured-arrow" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span></span>
         </a>`;
     }).join('');
