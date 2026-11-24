@@ -6,6 +6,14 @@ const markdownTargets = {
     home: 'home-md'
 };
 
+const TYPEWRITER_ROLES = [
+    'AIGC Researcher',
+    'Image Restoration',
+    'Low-level Vision',
+    'PhD @ HKUST(GZ)',
+    'Robotics Enthusiast'
+];
+
 const THEME_KEY = 'fei-theme';
 
 /* ---------- publications ---------- */
@@ -21,6 +29,7 @@ const PUB_CATEGORIES = [
 const COUNTER_BUCKETS = {
     cv: /cvpr|iccv|eccv/i,
     ml: /neurips|iclr|icml/i,
+    ai: /aaai|ijcai|acm\s*mm/i,
     med: /miccai|midl|isbi/i
 };
 
@@ -98,23 +107,6 @@ function buildPaperCard(p, index) {
         </article>`;
 }
 
-function renderFeatured() {
-    const wrap = document.getElementById('featured-projects');
-    if (!wrap) {
-        return;
-    }
-    const keys = ['lucidnft2026', 'ultraflux2026', 'lucidflux2026'];
-    const featured = keys.map(key => pubData.find(p => p.key === key)).filter(Boolean);
-    wrap.innerHTML = featured.map(p => {
-        const href = ((p.links || []).find(link => link.label === 'Website') || (p.links || [])[0] || {}).url || '#publications';
-        const [name, ...rest] = p.title.split(':');
-        return `<a class="featured-card" href="${href}" target="_blank" rel="noopener noreferrer">
-            <span class="featured-image"><img src="${p.thumb}" alt="${p.alt || name}" loading="lazy"></span>
-            <span class="featured-copy"><span class="featured-venue">${p.venue}</span><strong>${name}</strong><span class="featured-subtitle">${rest.join(':').trim()}</span><span class="featured-arrow" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span></span>
-        </a>`;
-    }).join('');
-}
-
 function buildPubChips() {
     const wrap = document.getElementById('pub-filter-chips');
     if (!wrap) {
@@ -177,7 +169,7 @@ function setupPubSearch() {
 }
 
 function setPubCounters() {
-    const counts = { cv: 0, ml: 0, med: 0, projects: 0 };
+    const counts = { cv: 0, ml: 0, ai: 0, med: 0 };
     pubData.forEach(p => {
         const venue = p.venue || '';
         Object.keys(COUNTER_BUCKETS).forEach(key => {
@@ -185,9 +177,6 @@ function setPubCounters() {
                 counts[key]++;
             }
         });
-        if (p.category === 'other') {
-            counts.projects++;
-        }
     });
     document.querySelectorAll('[data-counter]').forEach(el => {
         el.textContent = counts[el.dataset.counter] || 0;
@@ -310,7 +299,6 @@ function renderPublications() {
         })
         .then(() => {
             list.innerHTML = pubData.map((p, i) => buildPaperCard(p, i)).join('');
-            renderFeatured();
             buildPubChips();
             setupPubSearch();
 
@@ -376,12 +364,13 @@ function setupThemeToggle() {
         return;
     }
 
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     let saved = null;
     try {
         saved = localStorage.getItem(THEME_KEY);
     } catch (e) { /* ignore */ }
 
-    const useDark = saved === 'dark';
+    const useDark = saved ? saved === 'dark' : prefersDark;
     document.body.classList.toggle('dark', useDark);
 
     toggle.addEventListener('click', () => {
@@ -391,6 +380,40 @@ function setupThemeToggle() {
             localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light');
         } catch (e) { /* ignore */ }
     });
+}
+
+function setupTypewriter() {
+    const el = document.getElementById('typewriter-text');
+    if (!el || !TYPEWRITER_ROLES.length) {
+        return;
+    }
+
+    let roleIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    const tick = () => {
+        const word = TYPEWRITER_ROLES[roleIndex];
+        if (!deleting) {
+            charIndex++;
+            el.textContent = word.slice(0, charIndex);
+            if (charIndex === word.length) {
+                deleting = true;
+                return setTimeout(tick, 1700);
+            }
+            return setTimeout(tick, 65 + Math.random() * 70);
+        }
+        charIndex--;
+        el.textContent = word.slice(0, charIndex);
+        if (charIndex === 0) {
+            deleting = false;
+            roleIndex = (roleIndex + 1) % TYPEWRITER_ROLES.length;
+            return setTimeout(tick, 450);
+        }
+        return setTimeout(tick, 32);
+    };
+
+    setTimeout(tick, 900);
 }
 
 function setupScrollEffects() {
@@ -527,6 +550,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setupResponsiveNavbar();
     setupPublicationsView();
     setupThemeToggle();
+    setupTypewriter();
     setupScrollEffects();
     setupRevealAnimations();
 
